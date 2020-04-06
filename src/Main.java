@@ -8,7 +8,7 @@ public class Main {
         task8(1900);
     }
 
-    //Метод по вычислению a*(b+(c/d))
+    //Метод по вычислению выражения a*(b+(c/d))
     static float task3(float a, float b, float c, float d){
         return a*(b+(c/d));
     }
