@@ -36,12 +36,12 @@ public class HomeWork {
     }
 
     //Метод создаёт квадратную матрицу и заполняет её диагональные элементы единицами.
-    static void task4() {
+    static void task4(int n) {
         System.out.println("task 4:");
-        int[][] arr = new int[5][5];
-        for (int i = 0; i <5 ; i++) {
-            for (int j = 0; j <5 ; j++) {
-                if(i == j){
+        int[][] arr = new int[n][n];
+        for (int i = 0; i <n ; i++) {
+            for (int j = 0; j <n ; j++) {
+                if(i == j || i+j == n-1){
                     arr[i][j] = 1;
                 }
                 System.out.printf("%3d", arr[i][j]);
@@ -137,7 +137,7 @@ public class HomeWork {
         task1();
         task2();
         task3();
-        task4();
+        task4(10);
         task5();
         int[] arr6 = {2, 2, 2, 1, 2, 2, 10, 1};
         System.out.println("task 6: " + task6(arr6));
